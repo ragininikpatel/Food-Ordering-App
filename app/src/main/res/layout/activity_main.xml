@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Waves Of Food"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintTop_toTopOf="@id/iv" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:outlineAmbientShadowColor="@color/textColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f4f4f4">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="8dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gd4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attantion"
+                app:layout_constraintEnd_toEndOf="@id/txt_pendingOrder"
+                app:layout_constraintStart_toStartOf="@+id/gd3"
+                app:layout_constraintTop_toTopOf="@id/gd2" />
+
+            <TextView
+                android:id="@+id/txt_pendingOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yeonsung_regular"
+                android:text="Pending Order"
+                android:textColor="@color/textColor"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@id/gd3"
+                app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+            <TextView
+                android:id="@+id/pendingOrderCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="30"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_pendingOrder"
+                app:layout_constraintStart_toStartOf="@id/gd3"
+                app:layout_constraintTop_toBottomOf="@+id/txt_pendingOrder" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                app:layout_constraintBottom_toTopOf="@id/textView9"
+                app:layout_constraintEnd_toEndOf="@id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@id/gd2" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yeonsung_regular"
+                android:text="Completed\n Order"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@id/txt_pendingOrder"
+                app:layout_constraintTop_toBottomOf="@id/imageView4"
+                app:layout_editor_absoluteY="40dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/completedOrderCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="30"
+                android:textColor="#ffc107"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dollar"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="@+id/gd2" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yeonsung_regular"
+                android:gravity="center"
+                android:text="Whole Time\n Earning"
+                android:textColor="@color/textColor"
+                app:layout_constraintEnd_toStartOf="@id/gd4"
+                app:layout_constraintHorizontal_bias="0.578"
+                app:layout_constraintStart_toEndOf="@id/textView9"
+                app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+            <TextView
+                android:id="@+id/earning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/yeonsung_regular"
+                android:text="30$"
+                android:textColor="#4caf50"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@id/textView11"
+                app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/textColor"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/add_item"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/greencard">
+
+                <ImageView
+                    android:id="@+id/iv_plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/pluse_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_plus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Add Menu"
+                    android:textColor="@color/textColor"
+                    android:textFontWeight="400" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/textColor"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/add_allItem"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/greencard">
+
+                <ImageView
+                    android:id="@+id/iv_eye"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/eye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_eye"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="All Item Menu"
+                    android:textColor="@color/textColor"
+                    android:textFontWeight="400" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear1">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/textColor"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_profile"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/greencard">
+
+                <ImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_user"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Profile"
+                    android:textColor="@color/textColor"
+                    android:textFontWeight="400" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/textColor"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/createUser"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/greencard">
+
+                <ImageView
+                    android:id="@+id/iv_user_plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user_plus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_user_plus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Create New User"
+                    android:textColor="@color/textColor"
+                    android:textFontWeight="400" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear2">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/textColor"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/outForDelivery"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/greencard">
+
+                <ImageView
+                    android:id="@+id/iv_order"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/shopping_bag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_order"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Order Dispatch"
+                    android:textColor="#ffc107"
+                    android:textFontWeight="400" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:outlineAmbientShadowColor="@color/textColor"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/logout"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:background="@drawable/greencard">
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/log_out" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_logout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Logout"
+                    android:textColor="#ff0707"
+                    android:textFontWeight="400" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
