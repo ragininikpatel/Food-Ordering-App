@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "363072275009",
+    "firebase_url": "https://wave-of-food-e36e2-default-rtdb.firebaseio.com",
+    "project_id": "wave-of-food-e36e2",
+    "storage_bucket": "wave-of-food-e36e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363072275009:android:33d3c28c145cdf4d27bcc0",
+        "android_client_info": {
+          "package_name": "com.bleapp.adminwaveoffood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363072275009-ugh653o7e0j6la57mpo8hsfm64crrbh5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bleapp.adminwaveoffood",
+            "certificate_hash": "092031aac51309b596fe768637fcec8bfcf78e62"
+          }
+        },
+        {
+          "client_id": "363072275009-h7mp559khupvkan8fimid7m52c2t7h7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_Lig5olf4hMr_rIg-O48m2Bibu6Lrgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363072275009-h7mp559khupvkan8fimid7m52c2t7h7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363072275009:android:cd933a7562bc8ca327bcc0",
+        "android_client_info": {
+          "package_name": "com.bleapp.fooddeliveryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363072275009-h7mp559khupvkan8fimid7m52c2t7h7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_Lig5olf4hMr_rIg-O48m2Bibu6Lrgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363072275009-h7mp559khupvkan8fimid7m52c2t7h7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

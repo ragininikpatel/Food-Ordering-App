@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="5sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cartImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/cartImage"
+
+                >
+
+                <TextView
+                    android:id="@+id/cartFoodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/yeonsung_regular"
+                    android:text="Herbal Pancake"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/cartItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cartFoodName"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="$7"
+                    android:textColor="@color/textColor"
+                    android:textFontWeight="400"
+                    android:textSize="22dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/minusbutton"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/addtocartshape"
+                        android:src="@drawable/minus" />
+
+                    <TextView
+                        android:id="@+id/cardItemQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/minusbutton"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="1"
+                        android:textColor="#181818"
+                        android:textSize="16dp" />
+
+                    <ImageButton
+                        android:id="@+id/plusbutton"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_toRightOf="@+id/cardItemQty"
+                        android:background="@drawable/addtocartshape"
+                        android:src="@drawable/plus" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/deletebutton"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5sp"
+                    android:src="@drawable/trash"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
